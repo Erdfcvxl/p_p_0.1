@@ -1,0 +1,386 @@
+/* ==========================================================================
+Global Style
+========================================================================== */
+html,
+body {
+    height: 100%;
+    font-family: Open Sans;
+}
+
+.wrap {
+    min-height: 100%;
+    height: auto;
+    margin: 0 auto -60px;
+    padding: 0 0 60px;
+}
+
+.vcenter {
+    display: inline-block;
+    vertical-align: middle;
+    float: none;
+}
+
+.dark-sep {
+    max-width: 80px;
+    border: 2px solid #3B3543;
+    margin-top: 40px;
+    margin-bottom: 40px;
+}
+
+.orange-sep {
+    max-width: 80px;
+    border: 2px solid #FFBE60;
+    margin-top: 40px;
+    margin-bottom: 40px;
+}
+
+a {
+    cursor: pointer;
+}
+
+.select2-selection__rendered {
+    max-height: 200px !important;
+    overflow: auto!important;
+}
+
+#s2-togall-search_info-city .s2-select-label {
+    display: none!important;
+}
+
+/* ==========================================================================
+Layout Style
+========================================================================== */
+.left {
+    background-color: #1a1a1a;
+    min-height: 500px;
+}
+
+.right {
+    background-color: #848484;
+    min-height: 500px;
+}
+
+.dark-bg {
+    background: #3B3543;
+    color: #FFBE60;
+}
+
+.light-bg {
+    background: #fff;
+}
+
+/* ==========================================================================
+Navigation Style
+========================================================================== */
+.navigacija{
+    position: relative;
+    background: rgba(255, 190, 96, 1);
+    margin-bottom: 0;
+    border: none;
+    min-height: 50px;
+    z-index: 200;
+}
+
+.pages {
+    float: left;
+}
+
+.navigacija .pages > ul{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+
+.navigacija .pages > ul > li{
+    float: left;
+}
+
+.navigacija .pages ul > li i{
+    font-size: 28px;
+    position: relative;
+    margin-top: -10px;
+    top: 5px;
+}
+
+.navigacija .pages > ul > li a{
+    display: block;
+    color: #fff;
+    text-align: center;
+    font-weight: 600;
+    padding: 14px 16px;
+    text-decoration: none;
+    text-transform: uppercase;
+    -moz-transition: all 0.3s ease-in-out;
+    -o-transition: all 0.3s ease-in-out;
+    -webkit-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+}
+
+.navigacija .pages > ul > li a:hover {
+    color: #2d2833;
+}
+
+.wrap-logo{
+    top: 0;
+    left: 50%;
+    position: absolute;
+    text-align: center;
+    padding: 3px;
+    margin-left: -50px;
+    z-index: -1;
+}
+
+.wrap-logo a {
+    position: relative;
+    display: block;
+    text-decoration: none;
+}
+
+span.logo{
+    position: relative;
+    display: inline-block;
+    top: 8px;
+    line-height: 1;
+    text-transform: uppercase;
+    text-align: left;
+    color: white;
+    font-family: "Open Sans";
+    font-weight: 300;
+    font-size: 14px;
+}
+
+.pages.personal {
+    float: right;
+}
+
+.navbar-second {
+    border-bottom: 1px solid #2d2833;
+    bottom-top: 1px solid #121115;
+    background: rgb(59, 53, 67);
+    background-image: url('../images/navbar-second-noise2.png');
+    margin-bottom: 0;
+    height: 80px;
+    z-index : 0;
+}
+
+.personal a.avatar {
+    display: block;
+    width: 33px;
+    height: 33px;
+    margin: 7px 15px;
+    padding: 0 !important;
+    font-size: 26px;
+    color: white;
+    font-weight: 100;
+    overflow: hidden;
+    border: 1px solid white;
+}
+
+.personal  a.avatar.img img{
+    margin: -10px 0px 0 -2px;
+}
+
+.personal a.avatar.img{
+    padding: 0px 0px !important;
+}
+
+.personal a.avatar:hover {
+    border: 1px solid black;
+}
+
+.pages > a,
+.personal > a.avatar {
+    display: none;
+}
+
+
+#profile {
+    position: absolute;
+    z-index: 100;
+    right: 0px;
+    top: -500px;
+   /* top: 49px;*/
+    padding: 5px 15px;
+    background: rgba(255, 190, 96, 1);
+    text-transform: uppercase;
+    border: 1px solid white;
+    border-right: none;
+    -webkit-box-shadow: 0px 7px 7px -5px rgba(0,0,0,0.75);
+    -moz-box-shadow: 0px 7px 7px -5px rgba(0,0,0,0.75);
+    box-shadow: 0px 7px 7px -5px rgba(0,0,0,0.75);
+}
+
+#profile ul,
+#menu ul{
+    margin: 0;
+}
+
+#profile li,
+#menu li {
+    padding: 5px 10px;
+}
+
+#profile li a,
+#menu li a {
+    color: white;
+    -moz-transition: all 0.3s ease-in-out;
+    -o-transition: all 0.3s ease-in-out;
+    -webkit-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+}
+
+#profile li a:hover,
+#menu li a:hover {
+    color: black;
+    text-decoration: none;
+}
+
+#menu {
+    overflow: auto;
+    top: -500px;
+    left: -1px;
+    position: absolute;
+    z-index: 100;
+    /* top: 49px;*/
+    padding: 10px 30px;
+    background: rgba(255, 190, 96, 1);
+    text-transform: uppercase;
+    border: 1px solid white;
+    border-top: none;
+    -webkit-box-shadow: 0px 7px 7px -5px rgba(0,0,0,0.75);
+    -moz-box-shadow: 0px 7px 7px -5px rgba(0,0,0,0.75);
+    box-shadow: 0px 7px 7px -5px rgba(0,0,0,0.75);
+}
+
+/* ==========================================================================
+Typography
+========================================================================== */
+
+/* ==========================================================================
+Collapse
+========================================================================== */
+.panel {
+    margin-bottom: -2px;
+}
+
+.panel-orange{
+    border-color: #d49e50;
+}
+
+.panel-collapse {
+    padding: 10px 15px;
+}
+
+.panel-heading{
+    background-color: rgba(255, 190, 96, 1)!important;
+    color: white!important;
+    text-transform: uppercase;
+    border-color: #d49e50;
+}
+
+.no-top-radius {
+    border-top-right-radius: 0;
+    border-top-left-radius: 0;
+}
+
+/* ==========================================================================
+Form style
+========================================================================== */
+.form-control{
+    border-radius: 0;
+    background-color: transparent;
+}
+
+/* ==========================================================================
+Button styles
+========================================================================== */
+.btn-main {
+    background-color: #666A83;
+    color: #fff;
+}
+
+.btn-orange {
+    background-color: #FFBE60;
+    color: #fff;
+}
+
+.btn-orange:hover,
+.btn-orange:focus {
+    color: #fff6b6;
+}
+
+
+/* ==========================================================================
+Avatar
+========================================================================== */
+.avatar {
+    border: 1px solid white;
+}
+
+.avatar-black {
+     border: 1px solid #3B3543;
+ }
+
+.avatar-big {
+    display: inline-block;
+    width: 180px;
+    height: 180px;
+    font-size: 152px;
+}
+
+
+/* ==========================================================================
+Masonary Style
+========================================================================== */
+.item {
+    width: 33%;
+}
+
+/* ==========================================================================
+Footer Style
+========================================================================== */
+footer > .container {
+    color: white;
+    padding: 30px 15px;
+}
+
+footer h1 {
+    letter-spacing: 0em;
+    text-transform: uppercase;
+}
+
+footer .c,
+footer .c-mini {
+    clear: both;
+    display: block;
+    text-transform: uppercase;
+    font-size: 18px;
+    font-weight: 400;
+    letter-spacing: 0.05em;
+}
+
+footer .c-mini {
+    position: relative;
+    display: block;
+    font-size: 16px;
+    text-align: right;
+    font-weight: 300;
+}
+
+.c-mini span {
+    position: absolute;
+    right: 73px;
+    top: 11px;
+    width: 150px;
+}
+
+footer .info {
+    float: left;
+    padding-left: 15px;
+}
+
+footer .info a {
+    display: block;
+    color: #FDEB8D;
+}

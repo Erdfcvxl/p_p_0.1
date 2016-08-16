@@ -1,0 +1,42 @@
+@media (max-width: 800px) {
+    .pages ul{
+        display: none;
+    }
+
+    .pages > a,
+    .personal > a.avatar {
+        display: block;
+        width: 33px;
+        height: 33px;
+        margin: 9px 15px;
+        padding: 1px 7px;
+        font-size: 20px;
+        color: white;
+        font-weight: 100;
+        border: 1px solid white;
+        overflow: hidden;
+    }
+
+    .personal > a.avatar {
+        padding: 1px 8px !important;
+    }
+
+    .personal > a.avatar.img{
+        padding: 0px 0px !important;
+    }
+
+     .personal > a.avatar.img img{
+         margin: -1px -1px;
+     }
+
+}
+
+@media (max-width: 768px) {
+    footer .other {
+        margin-top: 60px;
+        display: block;
+        text-align: right;
+    }
+
+}
+

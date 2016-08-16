@@ -1,0 +1,561 @@
+/* ==========================================================================
+Global Styles
+========================================================================== */
+
+.light-sep {
+    max-width: 80px;
+    border: 2px solid #fff;
+    margin-top: 40px;
+    margin-bottom: 40px;
+}
+
+.vcenter {
+    display: inline-block;
+    vertical-align: middle;
+    float: none;
+}
+
+.dark-sep {
+    max-width: 80px;
+    border: 2px solid #3B3543;
+    margin-top: 40px;
+    margin-bottom: 40px;
+}
+
+.orange-sep {
+    max-width: 80px;
+    border: 2px solid #FFBE60;
+    margin-top: 40px;
+    margin-bottom: 40px;
+}
+
+.parallax-window{
+    height: 108%;
+}
+
+.clearify {
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 1);
+}
+
+.clearify-hard{
+    text-shadow: 1px 1px 0px rgba(0, 0, 0, 1);
+}
+
+.clearify-soft{
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.51);
+}
+
+.paper{
+    /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#1e5799+0,0e0c23+50&0+0,0.38+50,1+100,0+100 */
+    background: -moz-linear-gradient(left,  rgba(30,87,153,0) 0%, rgba(14,12,35,0.38) 50%, rgba(14,12,35,0) 100%); /* FF3.6-15 */
+    background: -webkit-linear-gradient(left,  rgba(30,87,153,0) 0%,rgba(14,12,35,0.38) 50%,rgba(14,12,35,0) 100%); /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(to right,  rgba(30,87,153,0) 0%,rgba(14,12,35,0.38) 50%,rgba(14,12,35,0) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#001e5799', endColorstr='#000e0c23',GradientType=1 ); /* IE6-9 */
+
+}
+
+
+/* ==========================================================================
+Preloader Style
+========================================================================== */
+.preloader {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    background-color: #FFBE61;
+    z-index: 500000;
+    overflow: hidden;
+}
+
+.preloader .loader {
+    position:absolute;
+    width: 100px;
+    height: 100px;
+    margin: auto;
+    top: 0;
+    bottom:0;
+    left:0;
+    right:0;
+    line-height:100px;
+    text-align:center;
+}
+
+.preloader .fa {
+    color: rgb(240, 109, 54);;
+    font-size:80px;
+    animation: bounce 1s infinite;
+}
+
+.preloader .shadow {
+    width: 40px;
+    height: 5px;
+    border-radius: 50%;
+    background-color: #3B3543;
+    margin: 0 auto;
+    animation: bounceshadow 1s infinite;
+}
+
+@keyframes bounceshadow {
+    0%, 20%, 50%, 80%, 100% {
+        width:40px;
+    }
+    40% {
+        width:20px;
+    }
+    60% {
+        width:30px;
+    }
+}
+
+@keyframes bounce {
+    0%, 20%, 50%, 80%, 100% {
+        transform: translateY(0);
+    }
+    40% {
+        transform: translateY(-50px);
+    }
+    60% {
+        transform: translateY(-10px);
+    }
+}
+
+
+/* ==========================================================================
+Navigation Style
+========================================================================== */
+.navbar-default {
+    background: rgba(255, 190, 96, 0.8);
+    margin-bottom: 0;
+    border: none;
+}
+
+.navbar-toggle{
+    margin-top: 28px;
+}
+
+.navbar-nav {
+    float: none;
+}
+
+.navbar .in .nav li {
+    display: block;
+    float: none;
+    width:100%;
+}
+
+.navbar-nav > li {
+    display: inline-block;
+    float: none;
+}
+
+.navbar-brand {
+    position: relative;
+    height: 90px;
+}
+
+.navbar-default .nav > li > a {
+    font-size: 14px;
+    color: #fff;
+    font-weight: 700;
+    text-transform: uppercase;
+    padding: 35px 15px;
+    -moz-transition: all 0.3s ease-in-out;
+    -o-transition: all 0.3s ease-in-out;
+    -webkit-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+}
+
+/* ==========================================================================
+Typography
+========================================================================== */
+h1 {
+    font-size: 72px;
+    font-weight: 300;
+    letter-spacing: 0.16em;
+}
+
+h2 {
+    font-size: 36px;
+    font-weight: 400;
+    letter-spacing: 0.05em;
+}
+
+h3 {
+    font-size: 26px;
+    font-weight: 400;
+}
+
+h4 {
+    font-size: 24px;
+    font-weight: 400;
+}
+
+h5 {
+    font-size: 22px;
+    font-weight: 400;
+}
+
+h6 {
+    font-size: 18px;
+    font-weight: 400;
+    letter-spacing: 0.05em;
+}
+
+p {
+    font-size: 16px;
+    font-weight: 400;
+}
+
+
+/* ==========================================================================
+Form Styles
+========================================================================== */
+.form-control{
+    background-color: transparent;
+    -webkit-border-radius: 0;
+    -moz-border-radius: 0;
+    border-radius: 0;
+    border-color: #fff;
+}
+
+/* ==========================================================================
+Buttons Styles
+========================================================================== */
+
+.btn {
+    border-radius: 0px;
+    -moz-transition: all 0.3s ease-in-out;
+    -o-transition: all 0.3s ease-in-out;
+    -webkit-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+}
+
+.btn-basic, .btn-basic-invert:hover {
+    color: #fff;
+    text-transform: uppercase;
+    background-color: transparent;
+    border: 2px solid #fff;
+}
+
+.btn-basic:hover, .btn-basic-invert {
+    color: #0d0d0d;
+    border: 2px solid #fff;
+    background-color: #fff;
+    text-transform: uppercase;
+}
+
+.greetings .btn-basic-invert:hover {
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 1);
+}
+
+.greetings .btn-basic:hover {
+    text-shadow: none;
+}
+
+/* ==========================================================================
+Layout
+========================================================================== */
+
+.dark-bg {
+    background: #3B3543;
+    color: #FFBE60;
+}
+
+.light-bg {
+    background: #fff;
+}
+
+section > .container {
+    padding: 100px 15px;
+}
+
+#apie,
+#atsiliepimai,
+#nariai,
+#privalumai {
+    position: relative;
+    text-align: center;
+}
+
+/* ==========================================================================
+paralax Style
+========================================================================== */
+
+#flat01 .background,
+.background,
+#atsiliepimai .background {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    overflow: hidden;
+    background-image: url(../images/superthumb.png);
+}
+
+/* ==========================================================================
+Apie Style
+========================================================================== */
+#apie {
+    text-align: center;
+    color : #3B3543;
+    padding-bottom: 40px;
+    background-color: white;
+    /*3B3543*/
+}
+#apie h2 {
+    /*color: #FFBE60;*/
+    text-transform: uppercase;
+}
+#apie .services-box {
+    margin-top: 40px;
+}
+#apie .services-box .col-md-4,
+#apie .services-box .col-md-8 {
+    margin-bottom: 20px;
+}
+#apie .services-box .col-md-4 .media-left,
+#apie .services-box .col-md-8 .media-left,
+#apie .services-box .col-md-4 .media-right,
+#apie .services-box .col-md-4 .media-body,
+#apie .services-box .col-md-8 .media-body {
+    padding-right: 30px;
+    vertical-align: baseline;
+}
+#apie .services-box .col-md-4 .media-left p,
+#apie .services-box .col-md-8 .media-left p,
+#apie .services-box .col-md-4 .media-right p,
+#apie .services-box .col-md-4 .media-body p {
+    text-align: left;
+}
+#apie .services-box .col-md-4 .media-left h3,
+#apie .services-box .col-md-8 .media-left h3,
+#apie .services-box .col-md-4 .media-right h3,
+#apie .services-box .col-md-4 .media-body h3{
+    text-transform: uppercase;
+    /*color: #FFBE60;*/
+    text-align: left;
+}
+#apie .services-box .col-md-8 .media-body h3{
+    text-transform: uppercase;
+    text-align: center;
+}
+#apie .services-box .col-md-8 .media-left span{
+    font-size: 48px;
+}
+#apie .services-box .col-md-4 .media-left span,
+#apie .services-box .col-md-4 .media-right span,
+#apie .services-box .col-md-4 .media-body span {
+    font-size: 36px;
+}
+
+#apie {
+    position: relative;
+}
+
+.item{
+    width :100%;
+}
+
+span.logo{
+    position: absolute;
+    left: 75px;
+    top: 30px;
+    line-height: 1.1;
+    text-transform: uppercase;
+    color: white;
+    font-family: "Open Sans";
+    font-weight: 300;
+    font-size: 14px;
+}
+
+
+/* ==========================================================================
+flat01 Style
+========================================================================== */
+
+#flat01 {
+    position: relative;
+    width: 100%;
+    top: 0;
+    left: 0;
+    overflow: hidden;
+}
+
+#welcome{
+    position: relative;
+}
+
+.greetings{
+    color: #fff;
+    margin: 120px 0;
+    text-align: center;
+    font-size: 18px;
+}
+
+.greetings p {
+    letter-spacing: 2px;
+}
+
+.greetings h1 {
+    font-size: 72px;
+    color: #fff;
+    margin-top: 40px;
+    margin-bottom: 40px;
+    text-transform: uppercase;
+    font-weight: 300;
+    letter-spacing: 8px;
+    line-height: 1;
+}
+
+#login,
+#remind,
+#register {
+    position: absolute;
+    top: 0;
+    left: 200%;
+    margin-left: -140px;
+}
+
+#login > div,
+#remind > div,
+#register > div {
+    border: 1px solid white;
+    position: relative;
+    width: 280px;
+    min-height: 300px;
+    /*background-color: #3B3543;*/
+    /*background-color: rgba(59, 53, 67, 0.9);*/
+    /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#ffbe60+0,ffbe60+100&0.8+40,1+100 */
+    background: -moz-linear-gradient(top,  rgba(255,190,96,0.8) 0%, rgba(255,190,96,0.8) 40%, rgba(255,190,96,1) 100%); /* FF3.6-15 */
+    background: -webkit-linear-gradient(top,  rgba(255,190,96,0.8) 0%,rgba(255,190,96,0.8) 40%,rgba(255,190,96,1) 100%); /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(to bottom,  rgba(255,190,96,0.8) 0%,rgba(255,190,96,0.8) 40%,rgba(255,190,96,1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ccffbe60', endColorstr='#ffbe60',GradientType=0 ); /* IE6-9 */
+    display: block;
+    color: white;
+    padding: 0 15px 15px;
+}
+
+#login h3,
+#remind h3,
+#register h3 {
+    font-weight: 300;
+    text-transform: uppercase;
+}
+
+#login .light-sep,
+#remind .light-sep,
+#register .light-sep {
+    border: none;
+    border-top: 1px solid white;
+    max-width: 100%;
+    margin: 0 0 15px 0;
+
+}
+
+#Tremind {
+    font-size: 14px;
+    cursor: pointer;
+    color: #AA7755;
+}
+
+#remind .hint {
+    font-size: 14px;
+}
+
+#login span,
+#remind span,
+#register span {
+    text-transform: uppercase;
+}
+
+/* ==========================================================================
+Nariai Style
+========================================================================== */
+#nariai {
+    text-align: center;
+}
+#nariai .col-lg-3 {
+    margin-top: 40px;
+    margin-bottom: 20px;
+}
+#nariai h2 {
+    text-transform: uppercase;
+    color: #FFBE60;
+}
+#nariai p {
+    color: #FFBE60;
+}
+#nariai h4 {
+    text-transform: uppercase;
+    color: #FFBE60;
+}
+#nariai .number {
+    color: #FFBE60;
+    font-weight: 700;
+    padding: 10px 0;
+    margin: 0;
+}
+#nariai span {
+    font-size: 54px;
+    color: #FFBE60;
+    margin-bottom: 15px;
+}
+
+/* ==========================================================================
+Privalumai Style
+========================================================================== */
+#privalumai {
+    backgroun-color: white;
+}
+
+
+/* ==========================================================================
+Atsiliepimai Style
+========================================================================== */
+
+#atsiliepimai{
+    color: white;
+}
+
+#atsiliepimai .item .quote .left {
+    float: left;
+    margin-right: 40px;
+    color: #fff;
+}
+
+#atsiliepimai .item h5 {
+    color: #fff;
+    line-height: 36px;
+}
+
+#atsiliepimai .item .quote {
+    margin: 20px auto;
+    width: 80%;
+}
+
+/* ==========================================================================
+Footer Style
+========================================================================== */
+footer > .container {
+    color: white;
+    padding: 60px 15px;
+}
+
+footer h1 {
+    letter-spacing: 0em;
+    text-transform: uppercase;
+}
+
+footer .c,
+footer .c-mini {
+    text-transform: uppercase;
+    font-size: 18px;
+    font-weight: 400;
+    letter-spacing: 0.05em;
+    margin-top: 30px;
+}
+
+footer .c-mini {
+    font-size: 16px;
+    font-weight: 300;
+}
